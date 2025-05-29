@@ -1,0 +1,70 @@
+@use "color";
+
+.result-section{
+    background-color: color.$Slate-900;
+    width: 50%;
+    padding: 1rem;
+    min-height: 67vh;
+    border-radius: 0 10px 10px 70px;
+    @media (max-width:1200px) {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+.show-result{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: color.$White;
+    padding-top: 2rem;
+    b{
+        font-size: 1.5rem;
+    }
+    @media (max-width:500px) {
+        img{
+            width: 100%;
+        }
+        b{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+.result{
+    h3{
+       color: color.$White;
+       font-size: 1.5rem; 
+    }
+    p{
+        color: color.$Slate-300;
+    }
+    @media (max-width:500px) {
+        h3{
+            font-size: 1.7rem;
+        }
+        p{
+            font-size: 17px;
+        }
+    }
+}
+.output{
+    background-color: color.$Slate-950;
+    padding: .8rem;
+    padding-top: .1rem;
+    border-top: 4px solid color.$Lime;
+    border-radius: 10px;
+    .mortgage-output{
+        font-size: 3rem;
+        color: color.$Lime;
+        font-weight: bold;
+    }
+    .total-section{
+        .total-term{
+            color: color.$White;
+            font-size: 1.3rem;
+        }
+    }
+}

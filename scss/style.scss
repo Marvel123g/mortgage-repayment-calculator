@@ -1,0 +1,39 @@
+@use "color";
+@forward "form";
+@forward "result";
+
+body{
+    background-color: color.$Slate-100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: color.$White;
+    width: 70%;
+    border-radius: 10px;
+    @media (max-width:1200px) {
+        flex-direction: column;
+        width: 50%;
+        border-radius: 0;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+    @media (max-width:500px) {
+        width: 100%;
+    }
+}
+.error{
+    font-size: 14px;
+    color: color.$Red;
+    display: none;
+}
+.radio-error{
+    font-size: 14px;
+    color: color.$Red;
+    display: none;
+}
