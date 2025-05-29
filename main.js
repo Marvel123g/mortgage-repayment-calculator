@@ -82,6 +82,11 @@ function calculateRepayment() {
     
 }
 function calculateInterest() {
+    amount = parseFloat( mortgageAmount.value);
+    term = parseInt(mortgageTerm.value) ;
+    interest = parseFloat(mortgageInterest.value) ;
+    
+    termPayments = term * 12;
     monthlyInterest = (amount * interest) / (100 * 12);
     totalInterest = monthlyInterest * termPayments;
 
